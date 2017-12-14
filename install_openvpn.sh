@@ -74,3 +74,6 @@ cipher AES-256-CBC
 comp-lzo
 comp-noadapt
 CLIENT_CONFIG
+
+wget https://raw.githubusercontent.com/bobey6/airplane-vpn/master/vpn_usergen.sh
+chmod +x vpn_usergen.sh
