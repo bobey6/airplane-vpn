@@ -31,5 +31,5 @@ echo -e "<tls-auth>" >> /tmp/$VPN_USER.ovpn
 cat /etc/openvpn/easy-rsa/keys/ta.key >> /tmp/$VPN_USER.ovpn
 echo -e "</tls-auth>" >> /tmp/$VPN_USER.ovpn >> /tmp/$VPN_USER.ovpn
 
-echo "Your OpenVPN client configuration is located at /tmp/$VPN_USER"
+echo "Your OpenVPN client configuration is located at /tmp/$VPN_USER.ovpn"
 
