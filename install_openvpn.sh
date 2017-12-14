@@ -20,7 +20,7 @@ source ./vars
 /etc/openvpn/easy-rsa/pkitool --server server
 openvpn --genkey --secret /etc/openvpn/easy-rsa/keys/ta.key
 openssl dhparam -dsaparam 4096 > /etc/openvpn/easy-rsa/keys/dh4096.pem
-iptables -t nat -A POSTROUTING -s 10.145.10.0/24 -o eth0 -j SNAT --to $SERVERIP
+iptables -t nat -A POSTROUTING -s 10.145.10.0/24 -o $INTERFACE -j SNAT --to $SERVERIP
 systemctl enable openvpn.service
 systemctl start openvpn.service
 
