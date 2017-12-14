@@ -1,7 +1,8 @@
 #!/bin/bash
 
-INTERFACE=$(ifconfig | cut -d" " -f1|head -n1) 
-SERVERIP=$(ifconfig $INTERFACE | grep "inet addr" | cut -d":" -f2 | cut -d" " -f1)
+INTERFACE=$(ifconfig | cut -d" " -f1|head -n1)
+SERVERIP=$(curl -s https://api.ipify.org)
+#SERVERIP=$(ifconfig $INTERFACE | grep "inet addr" | cut -d":" -f2 | cut -d" " -f1)
 export DEBIAN_FRONTEND=noninteractive
 
 apt-get update
