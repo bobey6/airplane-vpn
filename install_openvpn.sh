@@ -72,5 +72,4 @@ tls-cipher TLS-DHE-RSA-WITH-AES-256-GCM-SHA384:TLS-DHE-RSA-WITH-AES-128-GCM-SHA2
 cipher AES-256-CBC
 comp-lzo
 comp-noadapt
-key-direction 1
 CLIENT_CONFIG
