@@ -37,7 +37,7 @@ ca /etc/openvpn/easy-rsa/keys/ca.crt
 cert /etc/openvpn/easy-rsa/keys/server.crt
 key /etc/openvpn/easy-rsa/keys/server.key
 dh /etc/openvpn/easy-rsa/keys/dh4096.pem
-tls-auth /etc/openvpn/easy-rsa/ta.key 0
+tls-auth /etc/openvpn/easy-rsa/keys/ta.key 0
 server 10.145.10.0 255.255.255.0
 ifconfig-pool-linear 
 ifconfig-pool-persist ipp.txt
